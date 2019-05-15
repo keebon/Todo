@@ -1,13 +1,32 @@
 .App{
-  display:grid;
+  display: flex;
   margin: 0 auto;
-  grid-gap: .5rem;
-  grid-template-columns: 1fr 3fr;
-  height: 100vh;
 }
 
-.App div{
-  background: #ccc;
-  padding: 1rem;
+.sidebar{
+  flex: 1;
+  background-color:#64ffb5;
+  padding: 1em;
+  height: 593px;
 }
 
+.content{
+  flex: 3;
+  background-color: #77ffe7;
+  padding: 1em;
+  height: 593px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  padding: 1.5rem;
+  border: 1px solid;
+  height: 250px;
+}
+
+.titleBox{
+  border: 1px solid;
+  padding : 1rem;
+}
