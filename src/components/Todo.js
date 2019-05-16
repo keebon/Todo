@@ -1,10 +1,12 @@
 import React from 'react';
 import TodoForm from './TodoForm';
 import TodoList from './TodoList.js';
+import TodoClick from './TodoClick';
 
 export default class Todo extends React.Component{
     state = {
-        todos : []
+        todos : [],
+        clickedTodo : []
     }
 
     handleAddTodo = (todo) => {
@@ -14,14 +16,11 @@ export default class Todo extends React.Component{
     }
 
     handleGetInfo = (id) => {
-        this.setState({
-            todos : this.state.todos.map(todo => {
-                if(todo.id === id){
-                    return todo;
-                }
+        this.state.todos.map(todo => 
+            this.setState({
+                clickedTodo : todo.id === id ? [todo] : [todo]
             })
-        });
-
+        );
     }
 
 
@@ -34,6 +33,12 @@ export default class Todo extends React.Component{
                     key = {todo.id}
                     todo = {todo}
                     getInfo = {() => this.handleGetInfo(todo.id)}
+                    />
+                )}
+                {this.state.clickedTodo.map(todo => 
+                    <TodoClick 
+                        key = {todo.id}
+                        todo = {todo}
                     />
                 )}
             </div>

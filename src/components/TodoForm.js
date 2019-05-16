@@ -25,10 +25,10 @@ export default class TodoForm extends React.Component{
             date : formatted_date
         });
         this.setState({
-            title : '',
-            desc : ''
+            title : "",
+            desc : ""
         });
-
+        
     }
 
     render(){
@@ -39,7 +39,7 @@ export default class TodoForm extends React.Component{
                 }}>
                     <form onSubmit = {this.handleSubmit}>
                         <div className="form-group">
-                            <label>Email address</label>
+                            <label>Todo Title</label>
                             <input onChange = {this.handleChange} className="form-control" name="title" placeholder="Title" />
                         </div>
                         <div className="form-group">
