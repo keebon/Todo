@@ -1,0 +1,23 @@
+.todo {
+    background-color: #2a4d69;
+    width: auto;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.todo-form{
+    height: 620px;
+}
+
+.item{
+    border: 2px solid #adcbe3;
+    height: 400px;
+    width: 600px;
+    background-color: #adcbe3;
+}
