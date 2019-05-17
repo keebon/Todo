@@ -1,7 +1,7 @@
 .todo {
     background-color: #2a4d69;
     width: auto;
-    height: auto;
+    height: 620px;
 }
 
 .container{
@@ -11,13 +11,59 @@
     height: 100%;
 }
 
-.todo-form{
-    height: 620px;
-}
-
 .item{
     border: 2px solid #adcbe3;
-    height: 400px;
     width: 600px;
     background-color: #adcbe3;
+}
+
+
+.todo-input{
+    width: 50%;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.item-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.todo-btn{
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+    border-color: #2a4d69;
+    background-color: #2a4d69;
+    height: 50px;
+}
+
+.todo-btn:hover{
+    border-color: #63ace5;
+    background-color: #63ace5;
+}
+
+.list-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form-wrapper{
+    width: 500px;
+    background: #adcbe3;
+    height: 450px;
+    padding: 1rem;
+}
+
+.todo-form{
+    text-align:center;
+}
+
+.todo-item{
+    text-align: center;
+    font-size: 2.5rem;
 }
