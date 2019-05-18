@@ -13,6 +13,12 @@ export default class Todo extends React.Component{
         });
     }
 
+    handleDelete = (id) =>{
+        this.setState({
+            todos : this.state.todos.filter(todo => todo.id !== id)
+        });
+    }
+
     render(){
         return(
             <div className = "todo">
@@ -25,6 +31,7 @@ export default class Todo extends React.Component{
                             <TodoList 
                             key = {todo.id}
                             todo = {todo}
+                            onDel = {() => this.handleDelete(todo.id)}
                             />
                         )}
                     </div>

@@ -19,7 +19,7 @@
 
 
 .todo-input{
-    width: 50%;
+    width: 74%;
     border-radius: 5px;
     height: 50px;
 }
@@ -64,6 +64,18 @@
 }
 
 .todo-item{
-    text-align: center;
     font-size: 2.5rem;
+    border: 1px solid #189ad3;
+    background: #189ad3;
+    margin: 1rem 0 0 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.dlt{
+    border-radius: 5px;
+    background-color: #005073;
+    width: 12%;
+    color: white;
+    margin-right: 10px;
 }
