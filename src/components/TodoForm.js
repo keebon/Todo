@@ -28,7 +28,7 @@ export default class TodoForm extends React.Component{
         return(
             <div className = "todo-form">
                 <form onSubmit = {this.onSub}>
-                    <input autoComplete="off" name = "text" onChange = {this.handleOnchange} className = "todo-input" />
+                    <input value = {this.state.text} autoComplete="off" name = "text" onChange = {this.handleOnchange} className = "todo-input" />
                     <button onClick = {this.onSub} className = "todo-btn">ADD TODO</button>
                 </form>
             </div>
